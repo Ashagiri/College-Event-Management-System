@@ -14,3 +14,10 @@ Event Discovery: A searchable dashboard that allows students to find upcoming fe
 MVT Architecture: Built using a clean Model-View-Template structure for high performance and scalability.
 
 Admin Dashboard: A centralized interface for college staff to manage event details and monitor student participation.
+
+# 🛠️ Tech Stack
+Backend: Python, Django
+
+Frontend: HTML5, CSS3, Bootstrap (Template Inheritance via base.html)
+
+Database: SQLite (Development)
