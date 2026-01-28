@@ -23,6 +23,20 @@ Frontend: HTML5, CSS3, Bootstrap (Template Inheritance via base.html)
 
 Database: SQLite (Development)
 
+## 🧪 Testing
+To ensure the system is running correctly, follow these steps:
+* **Server Check:** Run `python manage.py runserver` and ensure the development server starts without errors.
+* **Database Migrations:** Verify all tables are created by running `python manage.py migrate`.
+* **Functional Testing:** * Register a new user and log in to the student portal.
+    * As an Admin, create an event and check if the capacity decreases when a student registers.
+* **UI Testing:** Ensure the dashboard is responsive on both mobile and desktop views.
+
+---
+
+## 🏁 Conclusion
+The **College Event Management System** successfully solves the problem of unmanaged campus crowds by providing a digital gateway for event registration. By utilizing Django's robust backend and a clean MVT architecture, the system ensures data integrity and a smooth user experience. 
+
+Future updates will include email notifications for successful registrations and an automated certificate generation system for attendees.
 
 
 
