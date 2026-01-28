@@ -23,8 +23,7 @@ Frontend: HTML5, CSS3, Bootstrap (Template Inheritance via base.html)
 
 Database: SQLite (Development)
 
-# Images:
-![alt text](image-2.png)
+
 
 
 
