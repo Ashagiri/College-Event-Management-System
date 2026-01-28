@@ -69,6 +69,7 @@ python manage.py runserver
 Visit http://127.0.0.1:8000/ in your browser to see the app live!
 
 # 🏁 Conclusion
+By following this procedure, visitors can establish a clean development environment for the College Event Management System. This setup ensures that the Django application runs smoothly and securely on any local machine.
 This system solves the "mess" of unmanaged event registration by providing a digital gateway for students. Future updates will include automated email notifications and certificate generation.
 
 
