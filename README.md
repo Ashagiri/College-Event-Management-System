@@ -1,46 +1,32 @@
-# College-Event-Management-System
-# 📌 Introduction:
-The College Event Management System is a robust web application built using the Django framework, designed to streamline the organization and registration process for campus events.
+# 🎓 College-Event-Management-System
 
-In many colleges, event registration is often unmanaged, leading to overcrowded venues and a poor experience for attendees. 
-This project specifically addresses that "mess" by implementing a Dynamic Capacity Control system. By linking registrations directly to available seats, the system ensures that every event remains organized, safe, and professional.
+A robust web application built using the **Django framework**, designed to streamline the organization and registration process for campus events.
 
-# 🚀 Key Features
-Real-time Capacity Tracking: Automatically calculates "Filled vs. Available" seats to prevent over-booking.
+## 🚀 Key Features
+* **Real-time Capacity Tracking:** Automatically calculates available seats to prevent over-booking.
+* **Secure Authentication:** Separate portals for Students and Administrators using Django's built-in security.
+* **Event Discovery:** A searchable dashboard for students to find upcoming fests and workshops.
+* **Admin Dashboard:** A centralized interface for staff to manage event details and monitor participation.
 
-Secure Authentication: Separate portals for Students and Administrators using Django's built-in security.
+## 🛠️ Tech Stack
+* **Backend:** Python, Django
+* **Frontend:** HTML5, CSS3, Bootstrap
+* **Database:** SQLite (Development)
 
-Event Discovery: A searchable dashboard that allows students to find upcoming fests, workshops, and competitions.
-
-MVT Architecture: Built using a clean Model-View-Template structure for high performance and scalability.
-
-Admin Dashboard: A centralized interface for college staff to manage event details and monitor student participation.
-
-# 🛠️ Tech Stack
-Backend: Python, Django
-
-Frontend: HTML5, CSS3, Bootstrap (Template Inheritance via base.html)
-
-Database: SQLite (Development)
+## 📸 Screenshots
+<p align="center">
+  <img src="assets/image.png" width="400" alt="Dashboard Overview">
+  <img src="assets/image-1.png" width="400" alt="Event Details">
+</p>
 
 ## 🧪 Testing
 To ensure the system is running correctly, follow these steps:
-* **Server Check:** Run `python manage.py runserver` and ensure the development server starts without errors.
-* **Database Migrations:** Verify all tables are created by running `python manage.py migrate`.
-* **Functional Testing:** * Register a new user and log in to the student portal.
-    * As an Admin, create an event and check if the capacity decreases when a student registers.
-* **UI Testing:** Ensure the dashboard is responsive on both mobile and desktop views.
-
----
+1. **Server Check:** Run `python manage.py runserver` to ensure the server starts.
+2. **Database:** Run `python manage.py migrate` to verify all tables are created.
+3. **Functional Test:** Create a test event in the `/admin` panel and register as a student to check capacity updates.
 
 ## 🏁 Conclusion
-The **College Event Management System** successfully solves the problem of unmanaged campus crowds by providing a digital gateway for event registration. By utilizing Django's robust backend and a clean MVT architecture, the system ensures data integrity and a smooth user experience. 
-
-Future updates will include email notifications for successful registrations and an automated certificate generation system for attendees.
-
-
-
-
+This system solves the "mess" of unmanaged event registration by providing a digital gateway for students. Future updates will include automated email notifications and certificate generation.
 
 
 
