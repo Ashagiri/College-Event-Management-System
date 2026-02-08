@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-4">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white text-center">
+                <h4 class="mb-0">🎓 Student Login</h4>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-danger p-2">{{ message }}</div>
+                        {% endfor %}
+                    {% endif %}
+
+                    <div class="mb-3">
+                        <label class="fw-bold">Username</label>
+                        {{ form.username }} 
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="fw-bold">Password</label>
+                        {{ form.password }}
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+            </div>
+            <div class="card-footer text-center bg-light">
+                <p class="mb-0">New student? <a href="{% url 'signup' %}" class="fw-bold">Sign Up Here</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var inputs = document.querySelectorAll('input');
+    inputs.forEach(function(input) { input.classList.add('form-control'); });
+</script>
+{% endblock %}
