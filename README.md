@@ -44,7 +44,7 @@ It is highly recommended to use a virtual environment to keep dependencies isola
 
 Bash
 ### Windows
-python -m venv env
+"python -m venv env"
 .\env\Scripts\activate
 
 ### macOS/Linux
