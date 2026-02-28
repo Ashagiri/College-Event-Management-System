@@ -16,7 +16,7 @@ Traditional event management is often disorganized. This system provides a **cen
 # 🛠️ Tech Stack
 **Core**: Python 3.14, Django 6.0.2
 
-Database: SQLite (ACID compliant)
+**Database**: SQLite (ACID compliant)
 
 Frontend: Bootstrap 5, Custom CSS3
 
