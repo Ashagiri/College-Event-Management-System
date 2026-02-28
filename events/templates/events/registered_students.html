@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="fw-bold mb-0">📝 Registered Students</h2>
+            <p class="text-muted">Currently viewing all 7 active registrations.</p>
+        </div>
+        <a href="{% url 'admin_dashboard' %}" class="btn btn-outline-secondary shadow-sm">
+            <i class="fas fa-arrow-left me-2"></i> Back to Dashboard
+        </a>
+    </div>
+
+    <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="bg-light text-secondary small text-uppercase">
+                    <tr>
+                        <th class="ps-4">Student Name</th>
+                        <th>Email Address</th>
+                        <th>Event Choice</th>
+                        <th class="text-end pe-4">Date Registered</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for reg in registrations %}
+                    <tr>
+                        <td class="ps-4">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center me-3 fw-bold" style="width: 35px; height: 35px;">
+                                    {{ reg.user.username|slice:":1"|upper }}
+                                </div>
+                                <span class="fw-bold text-dark">{{ reg.user.username }}</span>
+                            </div>
+                        </td>
+                        <td class="text-muted">{{ reg.user.email }}</td>
+                        <td>
+                            <span class="badge rounded-pill bg-primary bg-opacity-10 text-primary px-3">
+                                {{ reg.event.name }}
+                            </span>
+                        </td>
+                        <td class="text-end pe-4 text-muted small">
+                            {{ reg.registered_at|date:"M d, Y" }}
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="4" class="text-center py-5 text-muted">
+                            <i class="fas fa-user-slash d-block mb-3 fs-1 opacity-25"></i>
+                            No students have registered yet.
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

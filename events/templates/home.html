@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-4">
+    <h2 class="mb-4 text-center fw-bold text-primary">🌍 Explore Events</h2>
+
+    <div class="card shadow-sm border-0 mb-4 bg-light p-3">
+        <form method="GET" class="row g-2">
+            <div class="col-md-6">
+                <input type="text" name="q" class="form-control" placeholder="Search events..." value="{{ request.GET.q }}">
+            </div>
+            <div class="col-md-4">
+                <select name="category" class="form-select">
+                    <option value="">All Categories</option>
+                    <option value="AI">AI & ML</option>
+                    <option value="TECH">Technical</option>
+                    <option value="CULT">Cultural</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary w-100">Filter</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="row">
+        {% for event in events %}
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm h-100 border-0 position-relative transition-card">
+                {% if user.is_authenticated and user.department and event.category == user.department %}
+                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2 shadow-sm">
+                    <i class="fas fa-star"></i> Recommended
+                </span>
+                {% endif %}
+
+                {% if event.image %}
+                    <img src="{{ event.image.url }}" class="card-img-top" style="height: 180px; object-fit: cover;">
+                {% endif %}
+
+                <div class="card-body">
+                    <span class="badge bg-info mb-2">{{ event.category }}</span>
+                    <h5 class="card-title fw-bold">{{ event.name }}</h5>
+                    <p class="text-muted small">📍 {{ event.location }}</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <a href="{% url 'detail' event.id %}" class="btn btn-sm btn-outline-primary">Details</a>
+                        <small class="text-muted">{{ event.participants }} / {{ event.seats }}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p class="text-center text-muted">No events found.</p>
+        {% endfor %}
+    </div>
+
+    {% if events.has_other_pages %}
+    <nav class="mt-4">
+        <ul class="pagination justify-content-center">
+            {% if events.has_previous %}
+            <li class="page-item"><a class="page-link" href="?page={{ events.previous_page_number }}">Previous</a></li>
+            {% endif %}
+            <li class="page-item active"><span class="page-link">{{ events.number }}</span></li>
+            {% if events.has_next %}
+            <li class="page-item"><a class="page-link" href="?page={{ events.next_page_number }}">Next</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
+</div>
+
+<style>
+    .transition-card { transition: 0.3s ease; }
+    .transition-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; }
+</style>
+{% endblock %}
