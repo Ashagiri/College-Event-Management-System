@@ -24,7 +24,6 @@ A robust web application built using the **Django framework**, designed to strea
 
 
 
-
 </p>
 
 # 🧪 Testing
