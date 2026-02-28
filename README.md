@@ -18,7 +18,7 @@ Traditional event management is often disorganized. This system provides a **cen
 
 **Database**: SQLite (ACID compliant)
 
-Frontend: Bootstrap 5, Custom CSS3
+**Frontend**: Bootstrap 5, Custom CSS3
 
 Environment: Virtualenv for dependency isolation
 # 📸 Screenshots
