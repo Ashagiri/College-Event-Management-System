@@ -32,6 +32,26 @@ Traditional event management is often disorganized. This system provides a **cen
   <img width="1896" height="943" alt="image" src="https://github.com/user-attachments/assets/04593427-4a9b-4210-b9ef-28381079c74c" />
 </p>
 
+# ⚙️ Installation & Setup
+Clone the Repository
+
+Bash
+git clone https://github.com/Ashagiri/College-Event-Management-System.git
+cd College-Event-Management-System
+Initialize Environment
+
+Bash
+python -m venv env
+.\env\Scripts\activate  # Windows
+Install Requirements
+
+Bash
+pip install -r requirements.txt
+Database Migration & Launch
+
+Bash
+python manage.py migrate
+python manage.py runserver
 
 # 🏁 Conclusion
 By following this procedure, visitors can establish a clean development environment for the College Event Management System. This setup ensures that the Django application runs smoothly and securely on any local machine.
