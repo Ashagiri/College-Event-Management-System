@@ -32,56 +32,6 @@ Traditional event management is often disorganized. This system provides a **cen
   <img width="1896" height="943" alt="image" src="https://github.com/user-attachments/assets/04593427-4a9b-4210-b9ef-28381079c74c" />
 </p>
 
-# 🧪 Testing
-To ensure the system is running correctly, follow these steps:
-1. **Server Check:** Run `python manage.py runserver` to ensure the server starts.
-2. **Database:** Run `python manage.py migrate` to verify all tables are created.
-3. **Functional Test:** Create a test event in the `/admin` panel and register as a student to check capacity updates.
-
-# 🛠️ Environment Setup Procedure
-Follow these steps to get the project running on your local machine:
-
-## 1. Prerequisites
-Ensure you have Python 3.8+ installed.
-
-Ensure Git is installed and configured in your path.
-
-## 2. Clone the Repository
-Open your terminal and run:
-
-git clone https://github.com/Ashagiri/College-Event-Management-System.git
-cd your-repo-name
-## 3. Create a Virtual Environment
-It is highly recommended to use a virtual environment to keep dependencies isolated:
-
-Bash
-### Windows
-python -m venv env
-
-.\env\Scripts\activate
-
-### macOS/Linux
-python3 -m venv env
-source env/bin/activate
-
-## 4. Install Dependencies
-Install the required packages (make sure you are in the same folder as manage.py):
-
-Bash
-
-pip install -r requirements.txt
-## 5. Apply Migrations
-Set up the database schema:
-
-Bash
-python manage.py migrate
-## 6. Run the Application
-Start the development server:
-
-Bash
-python manage.py runserver
-Visit http://127.0.0.1:8000/ in your browser to see the app live!
-
 
 # 🏁 Conclusion
 By following this procedure, visitors can establish a clean development environment for the College Event Management System. This setup ensures that the Django application runs smoothly and securely on any local machine.
