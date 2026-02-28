@@ -20,7 +20,6 @@ A robust web application built using the **Django framework**, designed to strea
   <img width="1672" height="985" alt="image" src="https://github.com/user-attachments/assets/55cd1b25-0857-4f05-bae1-ffe60a9a5516" />
   <img width="1898" height="996" alt="image" src="https://github.com/user-attachments/assets/7daf2e4b-99dd-4f8c-85e9-fab2c265d5c5" />
   <img width="1896" height="943" alt="image" src="https://github.com/user-attachments/assets/04593427-4a9b-4210-b9ef-28381079c74c" />
-
 </p>
 
 # 🧪 Testing
