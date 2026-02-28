@@ -1,11 +1,6 @@
 # 🎓 College Event Management System
 A high-performance, full-stack web application designed to digitize campus event workflows, from student registration to real-time seat management.
 
-# 🚀 Key Features
-* **Real-time Capacity Tracking:** Automatically calculates available seats to prevent over-booking.
-* **Secure Authentication:** Separate portals for Students and Administrators using Django's built-in security.
-* **Event Discovery:** A searchable dashboard for students to find upcoming fests and workshops.
-* **Admin Dashboard:** A centralized interface for staff to manage event details and monitor participation.
 
 # 🛠️ Tech Stack
 * **Backend:** Python, Django
