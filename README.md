@@ -69,4 +69,4 @@ python manage.py runserver
 [ ] Student feedback and rating system.
 
 ### Copyright (c) 2026 Ashagiri. All rights reserved. 
-#### This code is for academic evaluation only. Unauthorized copying is prohibited.
+## This code is for academic evaluation only. Unauthorized copying is prohibited.
