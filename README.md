@@ -61,8 +61,11 @@ Database Migration & Launch
 python manage.py migrate
 python manage.py runserver
 
-# 🏁 Conclusion
-By following this procedure, visitors can establish a clean development environment for the College Event Management System. This setup ensures that the Django application runs smoothly and securely on any local machine.
-This system solves the "mess" of unmanaged event registration by providing a digital gateway for students. Future updates will include automated email notifications and certificate generation.
+🛤️ Roadmap
+[ ] Email notifications for registration confirmation.
+
+[ ] QR Code generation for event entry.
+
+[ ] Student feedback and rating system.
 
 
