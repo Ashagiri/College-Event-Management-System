@@ -58,6 +58,7 @@ source env/bin/activate
 Install the required packages (make sure you are in the same folder as manage.py):
 
 Bash
+
 pip install -r requirements.txt
 ## 5. Apply Migrations
 Set up the database schema:
