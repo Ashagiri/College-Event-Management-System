@@ -3,6 +3,7 @@ A high-performance, full-stack web application designed to digitize campus event
 
 # 🌟 Overview
 Traditional event management is often disorganized. This system provides a **centralized gateway** for students to discover workshops and fests while giving administrators powerful tools to track participation metrics.
+
 # 🛠️ Tech Stack
 * **Backend:** Python, Django
 * **Frontend:** HTML5, CSS3, Bootstrap
