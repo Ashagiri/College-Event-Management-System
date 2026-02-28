@@ -13,11 +13,14 @@ Traditional event management is often disorganized. This system provides a **cen
 
 **Automated Media Handling**: Integrated image processing for event banners using Pillow.
 
-# 🛠️ Tech Stack
-* **Backend:** Python, Django
-* **Frontend:** HTML5, CSS3, Bootstrap
-* **Database:** SQLite (Development)
+🛠️ Tech Stack
+Core: Python 3.14, Django 6.0.2
 
+Database: SQLite (ACID compliant)
+
+Frontend: Bootstrap 5, Custom CSS3
+
+Environment: Virtualenv for dependency isolation
 # 📸 Screenshots
 <p align="center">
   <img width="1896" height="975" alt="image" src="https://github.com/user-attachments/assets/a588e182-8828-49f4-8b90-2b230b95c423" />
