@@ -45,8 +45,7 @@ Ensure Git is installed and configured in your path.
 ## 2. Clone the Repository
 Open your terminal and run:
 
-git clone https://github.com/your-username/your-repo-name.git
-
+git clone https://github.com/Ashagiri/College-Event-Management-System.git
 cd your-repo-name
 ## 3. Create a Virtual Environment
 It is highly recommended to use a virtual environment to keep dependencies isolated:
