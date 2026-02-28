@@ -1,4 +1,5 @@
-, designed to streamline the organization and registration process for campus events.
+# 🎓 College Event Management System
+A high-performance, full-stack web application designed to digitize campus event workflows, from student registration to real-time seat management.
 
 # 🚀 Key Features
 * **Real-time Capacity Tracking:** Automatically calculates available seats to prevent over-booking.
