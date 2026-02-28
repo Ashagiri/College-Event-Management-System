@@ -8,6 +8,7 @@ Traditional event management is often disorganized. This system provides a **cen
 **Dynamic Event Dashboard** : Searchable and filterable interface for event discovery.
 **Smart Capacity Logic**: Backend validation to prevent over-booking based on venue limits.
 **Role-Based Access**: Specialized views for students (registrations) and administrators (event creation).
+**Automated Media Handling**: Integrated image processing for event banners using Pillow.
 
 # 🛠️ Tech Stack
 * **Backend:** Python, Django
