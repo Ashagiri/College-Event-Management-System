@@ -45,11 +45,11 @@ python -m venv env
 .\env\Scripts\activate  # Windows
 Install Requirements
 
-Bash
+**Bash**
 pip install -r requirements.txt
 Database Migration & Launch
 
-Bash
+**Bash**
 python manage.py migrate
 python manage.py runserver
 
