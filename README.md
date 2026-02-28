@@ -33,7 +33,7 @@ Traditional event management is often disorganized. This system provides a **cen
 </p>
 
 # ⚙️ Installation & Setup
-Clone the Repository
+**Clone the Repository**
 
 Bash
 git clone https://github.com/Ashagiri/College-Event-Management-System.git
