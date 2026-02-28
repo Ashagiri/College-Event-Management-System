@@ -1,5 +1,4 @@
-# 🎓 College-Event-Management-System 
-A robust web application built using the **Django framework**, designed to streamline the organization and registration process for campus events.
+, designed to streamline the organization and registration process for campus events.
 
 # 🚀 Key Features
 * **Real-time Capacity Tracking:** Automatically calculates available seats to prevent over-booking.
