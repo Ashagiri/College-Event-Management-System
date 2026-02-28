@@ -32,7 +32,7 @@ Traditional event management is often disorganized. This system provides a **cen
   <img width="1896" height="943" alt="image" src="https://github.com/user-attachments/assets/04593427-4a9b-4210-b9ef-28381079c74c" />
 </p>
 
-# ⚙️ Installation & Setup
+# ⚙️ Installation & Setup:
 **Clone the Repository**
 
 **Bash**
@@ -62,6 +62,7 @@ python manage.py migrate
 python manage.py runserver
 
 # 🛤️ Roadmap
+
 [ ] Email notifications for registration confirmation.
 
 [ ] QR Code generation for event entry.
