@@ -35,12 +35,12 @@ Traditional event management is often disorganized. This system provides a **cen
 # ⚙️ Installation & Setup
 **Clone the Repository**
 
-Bash
+**Bash**
 git clone https://github.com/Ashagiri/College-Event-Management-System.git
 cd College-Event-Management-System
 Initialize Environment
 
-Bash
+**Bash**
 python -m venv env
 .\env\Scripts\activate  # Windows
 Install Requirements
