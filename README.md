@@ -60,6 +60,7 @@ Database Migration & Launch
 **Bash**
 
 python manage.py migrate
+
 python manage.py runserver
 
 # 🛤️ Roadmap
