@@ -62,6 +62,7 @@ python manage.py migrate
 python manage.py runserver
 
 # 🛤️ Roadmap
+
 [ ] Email notifications for registration confirmation.
 
 [ ] QR Code generation for event entry.
