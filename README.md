@@ -37,6 +37,7 @@ Traditional event management is often disorganized. This system provides a **cen
 </p>
 
 # ⚙️ Installation & Setup:
+
 **Clone the Repository**
 
 **Bash**
