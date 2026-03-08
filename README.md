@@ -26,6 +26,7 @@ Traditional event management is often disorganized. This system provides a **cen
 **Environment**: Virtualenv for dependency isolation
 
 # 📸 System Gallery
+
 <p align="center">
   <img width="1896" height="975" alt="image" src="https://github.com/user-attachments/assets/a588e182-8828-49f4-8b90-2b230b95c423" />
   <img width="1902" height="942" alt="image" src="https://github.com/user-attachments/assets/0c1086f2-4190-4ddf-abd8-bcc8fe32c10f" />
