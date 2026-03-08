@@ -7,7 +7,6 @@ A high-performance, full-stack web application designed to digitize campus event
 Traditional event management is often disorganized. This system provides a **centralized gateway** for students to discover workshops and fests while giving administrators powerful tools to track participation metrics.
 
 # 🚀 Key Features
-
 **Dynamic Event Dashboard** : Searchable and filterable interface for event discovery.
 
 **Smart Capacity Logic**: Backend validation to prevent over-booking based on venue limits.
