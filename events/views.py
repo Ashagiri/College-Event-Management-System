@@ -63,6 +63,11 @@ def student_login(request):
             user = form.get_user()
             if hasattr(user, 'is_student') and user.is_student:
                 login(request, user)
+                
+                # Check for '?next=' parameter to route them back seamlessly
+                next_url = request.GET.get('next') or request.POST.get('next')
+                if next_url:
+                    return redirect(next_url)
                 return redirect('home')
             else:
                 messages.error(request, "Access Denied: Use Admin Login.")
@@ -93,10 +98,13 @@ def profile(request):
 @login_required
 def admin_dashboard(request):
     events = Event.objects.all().order_by('-date')
+    total_events = events.count()  # FIXED: Extracted total events count variable
     student_count = User.objects.filter(is_student=True).count()
     total_registrations = Registration.objects.count()
+    
     return render(request, 'events/admin_dashboard.html', {
         'events': events,
+        'total_events': total_events,  # FIXED: Matches template key context
         'student_count': student_count,
         'total_registrations': total_registrations
     })
