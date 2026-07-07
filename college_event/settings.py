@@ -79,5 +79,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
+# FIX: Overrides default 'accounts/login/' path to match your custom route name
+LOGIN_URL = 'student_login'
+
 # CRITICAL: Connects your custom User model (is_admin, is_student)
 AUTH_USER_MODEL = 'events.User'
