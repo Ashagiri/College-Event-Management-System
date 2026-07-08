@@ -11,10 +11,10 @@
             </div>
             <div class="col-md-4">
                 <select name="category" class="form-select">
-                    <option value="">All Categories</option>
-                    <option value="AI">AI & ML</option>
-                    <option value="TECH">Technical</option>
-                    <option value="CULT">Cultural</option>
+                    <option value="" {% if not request.GET.category %}selected{% endif %}>All Categories</option>
+                    <option value="AI" {% if request.GET.category == 'AI' %}selected{% endif %}>AI & ML</option>
+                    <option value="TECH" {% if request.GET.category == 'TECH' %}selected{% endif %}>Technical</option>
+                    <option value="CULT" {% if request.GET.category == 'CULT' %}selected{% endif %}>Cultural</option>
                 </select>
             </div>
             <div class="col-md-2">
@@ -55,14 +55,34 @@
 
     {% if events.has_other_pages %}
     <nav class="mt-4">
-        <ul class="pagination justify-content-center">
+        <ul class="pagination justify-content-center shadow-sm d-inline-flex rounded">
+            
             {% if events.has_previous %}
-            <li class="page-item"><a class="page-link" href="?page={{ events.previous_page_number }}">Previous</a></li>
+            <li class="page-item">
+                <a class="page-link" href="?page={{ events.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}{% if request.GET.category %}&category={{ request.GET.category }}{% endif %}">Previous</a>
+            </li>
+            {% else %}
+            <li class="page-item disabled"><span class="page-link text-muted">Previous</span></li>
             {% endif %}
-            <li class="page-item active"><span class="page-link">{{ events.number }}</span></li>
+
+            {% for num in events.paginator.page_range %}
+                {% if events.number == num %}
+                <li class="page-item active"><span class="page-link bg-primary border-primary text-whitefw-bold">{{ num }}</span></li>
+                {% else %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ num }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}{% if request.GET.category %}&category={{ request.GET.category }}{% endif %}">{{ num }}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+
             {% if events.has_next %}
-            <li class="page-item"><a class="page-link" href="?page={{ events.next_page_number }}">Next</a></li>
+            <li class="page-item">
+                <a class="page-link" href="?page={{ events.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}{% if request.GET.category %}&category={{ request.GET.category }}{% endif %}">Next</a>
+            </li>
+            {% else %}
+            <li class="page-item disabled"><span class="page-link text-muted">Next</span></li>
             {% endif %}
+            
         </ul>
     </nav>
     {% endif %}
@@ -71,5 +91,6 @@
 <style>
     .transition-card { transition: 0.3s ease; }
     .transition-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; }
+    .pagination { border-radius: 0.375rem; overflow: hidden; }
 </style>
 {% endblock %}
